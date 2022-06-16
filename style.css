@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    font-family: 'Lexend Deca',
+    sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5rem;
+    background: hsl(31deg 77% 52%);
+    transition: all .4s ease-in-out;
+    border: 1px solid hsl(31deg 77% 52%);
+    margin-bottom: 2rem;
+}
+
+a:hover {
+    background: #fff;
+    color: hsl(31deg 77% 52%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    max-width: 860px;
+    margin: 4.5rem 0;
+}
+
+.column {
+    padding: 2rem;
+}
+
+.column-img {
+    width: 50px;
+}
+
+.sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+        border-radius: 0 10px 10px 0;
+}
+
+.column-title {
+    color: hsl(0, 0%, 95%);
+    padding: 1.5rem 0;
+    font-family: 'Big Shoulders Display',
+        cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.column-text {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca',
+        sans-serif;
+    font-weight: 400;
+}
+
+button {
+    display: block;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    outline: none;
+    padding: 1em 2em;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-family: 'Lexend Deca',
+        sans-serif;
+        transition: background .5s ease-out ;
+        margin: 4.5rem 0 0.5rem;
+}
+
+button:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 716px) {
+    section {
+        flex-direction: column;
+    }
+    
+    .sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        background: hsl(179, 100%, 13%);
+        border-radius:0 0 10px 10px;
+    }
+}
